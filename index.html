@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Abarrotes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Tienda Abarrotes</h1>
+            <p>Tu tienda de confianza</p>
+        </div>
+    </header>
+
+    <!-- Carrito -->
+    <div class="carrito-info">
+        <div class="container">
+            <button id="ver-carrito" class="btn-carrito">Ver Carrito</button>
+            <button id="btn-agregar-producto" class="btn-carrito">Agregar</button>
+            <button id="btn-eliminar-producto" class="btn-carrito">Eliminar</button>
+        </div>
+    </div>
+
+    <!-- Productos -->
+    <main>
+        <div class="container">
+            <h2>Nuestros Productos</h2>
+            <div class="productos-grid" id="productos-grid">
+                <!-- Los productos se cargarán aquí con JavaScript -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal del Carrito -->
+    <div id="modal-carrito" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Carrito de Compras</h2>
+            <div id="carrito-items"></div>
+            <div class="carrito-total">
+                <h3>Total: $<span id="total-precio">0.00</span></h3>
+            </div>
+            <button id="btn-comprar" class="btn-comprar">Comprar</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
